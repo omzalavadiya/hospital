@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+.page-header-image
+{
+  background-image: url('./css/hospital\ management\ Admin/assets/images/login.jpg');
+}
+.spinner-taker
+{
+  height: 100vh;
+  width: 100%;
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50% -50%); */
+  background-color: #263038 !important;
+}
+.loader {
+  position: relative;
+  width: 64px;
+  height: 60px;
+}
+.loader::after {
+  content: '';
+  position: absolute;
+  left: -35px;
+  bottom: -60px;
+  background: #fff;
+  width: 64px;
+  height: 32px;
+  border-radius: 0 0 50px 50px;
+  animation: move 0.5s linear infinite alternate;
+}
+.loader::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 0;
+  background: #FF3D00;
+  width: 24px;
+  height: 24px;
+  transform: translateX(-50%) rotate(0deg);
+  animation: rotate 2s linear infinite;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes rotate {
+  100% { transform: translateX(-50%) rotate(360deg)}
+}
+@keyframes move {
+  0% { transform: rotate(10deg)}
+  100% { transform: rotate(-10deg)}
+}
+.input-group{
+  width: 38%!important;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px;
+}
+.form-control+.input-group-addon
+{
+  background-color: transparent!important;
+}   
+#btn-taker{
+  width: 38%!important;
+  left: 50%;
+  transform: translateX(80%);
+}
+#btn1{
+  width: 38%!important;
+}
+.navbar-collapse{
+  transform: translateX(70%);
+  font-size: 20px;
+}
+.btn2{
+  line-height: 20px!important;
+  .link{
+  font-size: 12px;
+}
+  color: #ffff;
+}
+.navbar-brand{
+  padding-left:50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#nav{
+  transform: translateX(-130%);
+  
 }
+#search{
+  transform: translateX(-310%);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#nav2{
+  width: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#s1{
+  position: inherit;
+  
 }
